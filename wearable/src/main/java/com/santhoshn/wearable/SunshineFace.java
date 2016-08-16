@@ -288,7 +288,7 @@ public class SunshineFace extends CanvasWatchFaceService {
             mDate.setTime(now);
 
             String text = String.format("%s:%s", formatTwoDigitNumber(mCalendar.get(Calendar.HOUR_OF_DAY)), formatTwoDigitNumber(mCalendar.get(Calendar.MINUTE)));
-            canvas.drawText(text, mXOffset, mYOffset, mTimePaint);
+            canvas.drawText(text, bounds.centerX()/2, mYOffset, mTimePaint);
 
             // Only render the day of week and date if there is no peek card, so they do not bleed
             // into each other in ambient mode.
@@ -300,7 +300,7 @@ public class SunshineFace extends CanvasWatchFaceService {
 //            }
             canvas.drawText(
                     dateFormat.format(mDate),
-                    mXOffset, mYOffset + mLineHeight, mDatePaint);
+                    bounds.centerX()/2, mYOffset + mLineHeight, mDatePaint);
         }
 
         /**
