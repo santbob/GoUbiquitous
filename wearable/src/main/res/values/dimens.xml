@@ -7,4 +7,5 @@
     <dimen name="digital_y_offset">90dp</dimen>
     <dimen name="digital_line_height">30dp</dimen>
     <dimen name="secondary_text_size">15dp</dimen>
+    <dimen name="divider_line_width">40dp</dimen>
 </resources>
