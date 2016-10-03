@@ -85,9 +85,9 @@ public class SunshineFace extends CanvasWatchFaceService {
     private static final int MSG_UPDATE_TIME = 0;
 
 
-    private int minTemp = 55;
-    private int maxTemp = 77;
-    private int weatherId = 525;
+    private int minTemp = 0;
+    private int maxTemp = 0;
+    private int weatherId = -1;
     private int currentWeatherId = -1;
     private boolean didRecieveData = true;
 
