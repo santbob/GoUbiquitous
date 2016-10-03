@@ -73,9 +73,9 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter implements 
     private static final long DAY_IN_MILLIS = 1000 * 60 * 60 * 24;
     private static final int WEATHER_NOTIFICATION_ID = 3004;
 
-    public static final String SUNSHINE_WEATHER_ID = "sunshine.data.min_temp";
+    public static final String SUNSHINE_WEATHER_ID = "sunshine.data.weather_id";
     public static final String SUNSHINE_MAX_TEMP = "sunshine.data.max_temp";
-    public static final String SUNSHINE_MIN_TEMP = "sunshine.data.weather_id";
+    public static final String SUNSHINE_MIN_TEMP = "sunshine.data.min_temp";
 
     private GoogleApiClient mGoogleApiClient;
 
