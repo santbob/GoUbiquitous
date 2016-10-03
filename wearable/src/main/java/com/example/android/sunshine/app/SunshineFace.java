@@ -480,6 +480,7 @@ public class SunshineFace extends CanvasWatchFaceService {
                             maxTemp = ((Double) dataMap.getDouble(MAX_TEMPRATURE)).intValue();
                             minTemp = ((Double) dataMap.getDouble(MIN_TEMPRATURE)).intValue();
                             didRecieveData = true;
+                            invalidate();
                         }
                     }
                 }
