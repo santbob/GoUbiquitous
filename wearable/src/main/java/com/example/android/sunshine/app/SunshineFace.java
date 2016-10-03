@@ -84,7 +84,6 @@ public class SunshineFace extends CanvasWatchFaceService {
      */
     private static final int MSG_UPDATE_TIME = 0;
 
-    private GoogleApiClient mGoogleApiClient;
 
     private int minTemp = 55;
     private int maxTemp = 77;
@@ -101,7 +100,7 @@ public class SunshineFace extends CanvasWatchFaceService {
     private static class EngineHandler extends Handler {
         private final WeakReference<SunshineFace.Engine> mWeakReference;
 
-        public EngineHandler(SunshineFace.Engine reference) {
+        EngineHandler(SunshineFace.Engine reference) {
             mWeakReference = new WeakReference<>(reference);
         }
 
@@ -324,7 +323,6 @@ public class SunshineFace extends CanvasWatchFaceService {
          */
         @Override
         public void onTapCommand(int tapType, int x, int y, long eventTime) {
-            Resources resources = SunshineFace.this.getResources();
             switch (tapType) {
                 case TAP_TYPE_TOUCH:
                     // The user has started touching the screen.
